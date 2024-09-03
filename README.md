@@ -1,0 +1,2 @@
+# TO STORE ALL GIT COMMANDS LEARNT IN ALX
+- We are learning git
