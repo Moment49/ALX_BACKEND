@@ -1,4 +1,5 @@
-git log / git log --oneline -  To list of commits, each with an author, date, and message. 
-git init - Initialize the git repo to start tracking file
-git status - To see the status of the git command, such as files being untracked or staged for commits
-git add . - To stage the file change
+git log / git log --oneline :  To list of commits, each with an author, date, and message. 
+git init : Initialize the git repo to start tracking file (Only run once)
+git status : To see the status of the git command, such as files being untracked or staged for commits
+git add . or git add (filename) : To stage the file changes (Staging or tracking)
+git commit -m "mesage" : To save the staged changes and making the working dir clean
