@@ -3,5 +3,10 @@ git init : Initialize the git repo to start tracking file (Only run once)
 git status : To see the status of the git command, such as files being untracked or staged for commits
 git add . or git add (filename) : To stage the file changes (Staging or tracking)
 git commit -m "mesage" : To save the staged changes and making the working dir clean
-git diff
+git diff : shows the contents of a file or files along with the before and after commits
 git checkout . : Removes all changes or restores them back to the original state
+git remote add origin : Adds my local repo to my remote repo
+git branch : To check the branch you are working once
+git stash : Stores the changes in a temp working dir when you want to focus on another task in other branch
+git push -u origin <branch>
+git remote set-url origin https://<token>@github.com/<Username>/<Repository>.git
