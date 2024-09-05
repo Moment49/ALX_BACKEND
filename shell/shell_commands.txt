@@ -2,13 +2,21 @@ pwd : The pwd command returns the path of the current working directory
 ls : Lists all the files and folders in the current working directory
 cd : It allows you to navigate to different subdirectories within the current directory
 ls -l file_name : To view the file permissions
-touch - To create a file
-mdir - Make a directory
-mv home.tx document/schools :  Use the mv command to move files between directories
+touch : To create a file
+mdir : Make a directory
+mv home.txt document/schools :  Use the mv command to move files between directories
 cp important_report.txt backup: The cp command creates a copy of a file. Use cp important_report.txt backup to create a copy named backup of the file important_report.txt.
 rm  rm filename.txt: Removes or deletes a file
 rmdir : To delete a directory
-
+Pipes (|) : Pipes allow for the chaining of multiple commands, with the output of one command serving as the input for the next. 
+Output Redirection (>) : Redirects command output to a file, overwriting its contents if it already exists. This is useful for saving the output of a command for later use.
+echo : To return a text back to the command line for linux
+>> : To append an output text to a file if it exists else it creates the file and adds it
+grep : This is searches for a keyword within a text file or file and returns all lines containing the word
+sort [-r, -u, -n, ] : This sorts the file text alpabetically in either format reverse, numeric or output unique lines
+uniq -c or -d filename.tx: Filters adjacent matching lines from a sorted file, the -c keyword count and -d for duplicate lines
+head -n 10 file.txt: Displays the first few lines of a file, providing a quick overview of its contents. * -n : Output the first lines.
+tail -n 20 file.txt: Displays the last few lines of a file, helpful for monitoring log files or viewing recent data entries. * -n : Output the last lines.
 
 
 
