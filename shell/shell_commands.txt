@@ -17,7 +17,7 @@ sort [-r, -u, -n, ] : This sorts the file text alpabetically in either format re
 uniq -c or -d filename.tx: Filters adjacent matching lines from a sorted file, the -c keyword count and -d for duplicate lines
 head -n 10 file.txt: Displays the first few lines of a file, providing a quick overview of its contents. * -n : Output the first lines.
 tail -n 20 file.txt: Displays the last few lines of a file, helpful for monitoring log files or viewing recent data entries. * -n : Output the last lines.
-
-
-
-
+adduser : Adds a user/creates a user
+deluser: Deletes the user from the linux machine
+groupadd : Creates a groupadd
+delgroup  : Deletes a group
