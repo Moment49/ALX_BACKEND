@@ -1,0 +1,69 @@
+You’re cleaning your closet and have a giant pile of dirty clothes! Unfortunately, 
+the washing machine only washes a limited number of clothes at a time. To maximize efficiency, 
+you need to sort the clothes into separate piles based on color (lights, darks) before washing.
+Write the algorithm, pseudocode the solution and anaylze the complexity ### Bonus Challenge:
+Can you modify the pseudocode to sort the clothes by type (shirts, pants, socks) as well as color? 
+How would this change the complexity?
+
+Algorithm
+
+1 - Start: Pick one cloth from the dirty pile of clothes
+2 - Compare: check if the cloth pick is white then set aside to the right from the rest of the clothes in the pile
+3 - If cloth that was pick is black then set aside to the left from the rest of the clothes
+4 - Repeate: Repeate step 2 and make the comparision in step 3 until clothes are sorted
+5 - load the white clothes to the washing machine
+6 - Set the timer on the washing machine 
+7 - Start washing the the clothes
+8 - Check if the timer has counted down which means clothes are washed
+9 - remove all the clothes washed from the washing machine
+10 - if not Repeate step 8 until timer is down and remove clothes washed from washing machine once finised
+11 - Next load the washing machine with the coloured clothes
+12 - Repeate step 6, 7, 8, 9 and 10
+
+
+Pseudocode
+white_clothes_right_basket = [] //Initialize empty white and coloured clothes spaces
+coloured_clothes_left_basket = []
+white_cloth_color = 'white'
+coloured_cloth_colot = 'coloured'
+Washing_Machine = Washshing_machine_model
+SET_WASHING_MACHINE_TIMER = 30
+
+FOR each cloth in the dirty_pile
+  IF cloth_color == white_cloth_color
+    Add/Move the cloth_color IN white_clothes_right_side // Appends/Adds the current cloth to the right white_clothes_right_basket
+  ELSE IF cloth_color == coloured_clothes_left_side
+    Add/Move the cloth_color IN coloured_clothes_left_side // Appends/Adds the current cloth to the left coloured_clothes_left_basket
+  END IF
+NEXT cloth
+
+OUTPUT "White clothes sorted", white_clothes_right_side " and "coloured clothes sorted":coloured_clothes_left_side.
+
+//LOAD THE WHITE CLOTHES TO THE WASHING MACHINE 
+
+FOR each white_clothes in white_clothes_right_basket
+    Move white_clothes into the Washing_Machine
+NEXT white_clothes
+START Washing_Machine
+IF SET_WASHING_MACHINE_TIMER == 0
+   remove all the white_clothes washed from  Washing_machine
+   ADD washed white_clothes in  white_clothes_right_side 
+END IF
+STOP Washing_Machine
+OUTPUT "All the white clothes are washed", white_clothes_right_basket "
+
+
+//LOAD THE COLORED CLOTHES TO THE WASHING MACHINE 
+FOR each coloured_clothes in coloured_clothes_left_basket 
+    Move coloured_clothes into the Washing_Machine
+NEXT coloured_clothes
+START Washing_Machine
+IF SET_WASHING_MACHINE_TIMER == 0
+   remove all the coloured_clothes washed from  Washing_machine
+   ADD washed coloured_clothes in  coloured_clothes_left_basket
+END IF
+
+STOP Washing_Machine
+OUTPUT "All the white clothes are washed", coloured_clothes_left_basket"
+
+
